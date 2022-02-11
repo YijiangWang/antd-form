@@ -4,7 +4,7 @@ import Field from './Field';
 import useForm from './useForm';
 
 const Form = _Form;
-Form.Field = Field;
+Form.Item = Field;
 Form.useForm = useForm;
 
 export {Field, useForm};

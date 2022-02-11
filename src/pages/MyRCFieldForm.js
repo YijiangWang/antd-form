@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react';
-import Form, {Field} from '../components/yj-rc-field-form';
+import Form from '../components/yj-rc-field-form';
 import Input from '../components/Input';
 
 const nameRules = {required: true, message: 'Please input your username!'};
@@ -28,25 +28,25 @@ function MyRCFieldForm() {
         onFinishFailed={finishFailHandle}
         form={form}  
       >
-        <Field
+        <Form.Item
           name='username'
           rules={[nameRules]}
         >
           <Input placeholder='please input your name' />
-        </Field>
+        </Form.Item>
         
-        <Field
+        <Form.Item
           name='password'
           rules={[pwdRules]}
         >
           <Input placeholder='please input your password' />
-        </Field>
+        </Form.Item>
 
-        <Field>
+        <Form.Item>
           <button contentEditable='true'>
             Submit
           </button>
-        </Field>
+        </Form.Item>
       </Form>
     </div>
   );
