@@ -1,4 +1,4 @@
-### 手写实现 antd 4.0 中 form 表单
+### 手写实现 antd 4.0 中 Form 表单
 
 ### 核心思想：状态处理
 1. 开辟一个空间 {} 存储我的状态，比如 store；
@@ -12,6 +12,7 @@
 2. antd 3.0 是把所有的表单状态存储到父组件，这样导致每次修改一个表单状态，会更新所有表单内容；
 
 ### 项目结构
+```
 |- public：资源文件 index.html
 |- src：
     |- index.js：入口文件
@@ -25,6 +26,7 @@
             |- Form：自定义 form 表单
             |- Field：这里主要实现受控组件
             |- useForm：store 状态管理库，这里提供实现 Form 表单功能需要的状态存储 store 以及对应的方法
+```            
 
 ### 使用 context 步骤
 1. 创建 context 对象 createContext
