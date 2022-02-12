@@ -1,6 +1,5 @@
 import { useCallback, useEffect } from 'react';
 import { Button, Form, Input } from 'antd';
-const { Item } = Form;
 
 const nameRules = {required: true, message: 'Please input your username!'};
 const pwdRules = {required: true, message: 'Please input your password!'}
@@ -27,25 +26,25 @@ function AntdFormPage() {
         onFinishFailed={finishFailHandle}
         form={form}
       >
-        <Item
+        <Form.Item
           name='username'
           rules={[nameRules]}
         >
           <Input />
-        </Item>
+        </Form.Item>
         
-        <Item
+        <Form.Item
           name='password'
           rules={[pwdRules]}
         >
           <Input.Password />
-        </Item>
+        </Form.Item>
 
-        <Item>
+        <Form.Item>
           <Button>
             Submit
           </Button>
-        </Item>
+        </Form.Item>
       </Form>
     </div>
   );

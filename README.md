@@ -28,6 +28,10 @@
             |- useForm：store 状态管理库，这里提供实现 Form 表单功能需要的状态存储 store 以及对应的方法
 ```            
 
+### 启动
+- 首先安装依赖： `npm install`;
+- 然后执行：`yarn start`；
+- 底下就可以查看效果、学习、调试了。
 ### 使用 context 步骤
 1. 创建 context 对象 createContext
 2. 使用 Provider 传递 value

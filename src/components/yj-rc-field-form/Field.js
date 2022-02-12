@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import FieldContext from './FieldContext';
 
 export default class Field extends PureComponent{
